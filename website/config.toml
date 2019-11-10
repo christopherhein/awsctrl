@@ -1,0 +1,97 @@
+title = "AWS Controller"
+baseURL = "https://awsctrl.io"
+disableKinds = ["sitemap", "taxonomy", "taxonomyTerm"]
+languageCode = "en-us"
+pygmentsCodefences = true
+pygmentsStyle = "monokai"
+staticDir = ["assets"]
+
+[params]
+description = "A Kubernetes controller for managing AWS Resources"
+sansseriffont = "Open Sans"
+monospacefont = "Fira Mono"
+fontawesomeversion = "5.6.3"
+js = ["jquery-3.3.1", "app"]
+logo = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/horizontal/color/cncf-color.png"
+favicon = "https://raw.githubusercontent.com/cncf/artwork/master/cncf/icon/color/cncf-icon-color.png"
+
+[params.logos]
+navbar = "/images/aws.png"
+footer = "/images/aws.png"
+panel = "/images/aws.png"
+
+[params.social.github]
+name = "GitHub"
+url  = "https://git.awsctrl.io/"
+icon = "github"
+color = "black"
+
+[params.social.slack]
+name = "Slack"
+url = "https://slack.k8s.io/"
+icon = "slack"
+color = "slack-green"
+
+[params.social.twitter]
+name = "Twitter"
+url = "https://twitter.com/awsctrl"
+icon = "twitter"
+color = "twitter-blue"
+handle = "awsctrl"
+
+[[params.fonts]]
+name = "Open Sans"
+sizes = [300, 400, 600, 700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [400]
+
+[params.navbar]
+fixed = true
+shadow = true
+
+[[params.features]]
+title = "Access Control with RBAC"
+description = "By using CRDs for AWS Resources you can set fine grain controls for who can create, read, update and delete resources."
+image = "/images/role.png"
+url = "/docs/rbac"
+
+[[params.features]]
+title = "Backed by AWS CloudFormation"
+description = "Backed with AWS CloudFormation for automatic drift detection, eventing, and easy auditabilty by non-technical staff."
+icon = "fas fa-rocket"
+url = "/docs"
+
+[[params.features]]
+title = "Easy Deployment"
+description = "By following the Quick Start guide you can be up and running in minutes."
+image = ""
+url = "/docs/quick-start"
+
+[[params.features]]
+title = ""
+description = "Feature 2 is potentially an even more important feature"
+image = ""
+url = "/docs"
+
+[[params.features]]
+title = "Feature 2"
+description = "Feature 2 is potentially an even more important feature"
+image = ""
+url = "/docs"
+
+[[menu.navbar]]
+name = "Docs"
+url = "/docs"
+weight = 1
+
+# [[menu.navbar]]
+# name = "Guides"
+# url = "/guided"
+# weight = 2
+
+# [[menu.navbar]]
+# name = "Blog"
+# url = "https://medium.com"
+# weight = 3

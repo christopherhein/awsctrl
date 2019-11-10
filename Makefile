@@ -84,3 +84,13 @@ kind-create:
 # Delete kind cluster for testing
 kind-delete:
 	kind delete cluster --name awsctrl 
+
+# Pass through commands to website
+website-serve:
+	${MAKE} -C website serve
+
+website-production-build:
+	${MAKE} -C website production-build
+
+website-preview-build:
+	${MAKE} -C website preview-build
